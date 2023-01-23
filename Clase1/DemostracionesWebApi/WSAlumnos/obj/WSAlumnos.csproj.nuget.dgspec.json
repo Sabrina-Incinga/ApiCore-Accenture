@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj": {}
+    "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj": {}
   },
   "projects": {
-    "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj": {
+    "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj",
+        "projectUniqueName": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj",
         "projectName": "WSAlumnos",
-        "projectPath": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj",
+        "projectPath": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSAlumnos\\obj\\",
+        "outputPath": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSAlumnos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

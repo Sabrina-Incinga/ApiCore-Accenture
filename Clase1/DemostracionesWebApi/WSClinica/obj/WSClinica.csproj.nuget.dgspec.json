@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj": {}
+    "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj": {}
   },
   "projects": {
-    "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj": {
+    "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj",
+        "projectUniqueName": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj",
         "projectName": "WSClinica",
-        "projectPath": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj",
+        "projectPath": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSClinica\\obj\\",
+        "outputPath": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSClinica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jKob8fkvKb3tqd5vre2eahR6YFIj+PyaUEKaLZteoY/hOUA/Dx+JfvR+JeTJZiUk4CgTj4N1umj7FCNgsjJoTg==",
+  "dgSpecHash": "GDgDIQsOuzjKHpRBfnB1VHKZpghN4HkQH3EuBpxtqpPLdfP/Md4GmqqkcO/QDEkDqucKssxLpmuLMseQ7asSqQ==",
   "success": true,
-  "projectFilePath": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WebApiLibros\\WebApiLibros.csproj",
+  "projectFilePath": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WebApiLibros\\WebApiLibros.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

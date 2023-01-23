@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "31xq7pZlK5GZT1oeJSIz17+6dKhyCxJXDTtIp9MqRdrccd50RHabx+WlbI4lWsb9JKCb7ojltzyARZlQmMA8vQ==",
+  "dgSpecHash": "+Y4ojvOlhTB+lAO12rDLbRVOFm2PMqL2Kp2hDAQb16dnLTbZFbWu5KFqFOUhIpntNbic+hmfs+vasYkGRwcMRA==",
   "success": true,
-  "projectFilePath": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj",
+  "projectFilePath": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSAlumnos\\WSAlumnos.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

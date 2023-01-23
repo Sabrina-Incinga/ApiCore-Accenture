@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jIKtjGJi5oxadS31kyhvLd7umMTiz+4PEJd9oG3me6KBOh3M/POj6Siup05gIpI1IH2P7Kf+dkbW7KK72/NXaQ==",
+  "dgSpecHash": "7ZVeL1pQI3Op0RVkSJzDXUXOkUKvDWsMwYThOncJOz6yHag95YuFE8VRq5N3UBJN+2dJB32lROb+tFreCvM5VQ==",
   "success": true,
-  "projectFilePath": "H:\\Sabrina\\Accenture\\ApiCore\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj",
+  "projectFilePath": "H:\\Sabrina\\Accenture\\ApiCore\\ApiCore-Accenture\\Clase1\\DemostracionesWebApi\\WSClinica\\WSClinica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
