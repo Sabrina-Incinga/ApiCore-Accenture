@@ -1,0 +1,1247 @@
+{
+	"info": {
+		"_postman_id": "030ebcd7-e567-412c-baff-85321c62b32e",
+		"name": "Pubs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19200363"
+	},
+	"item": [
+		{
+			"name": "Publisher",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pubId\": \"9934\",\r\n    \"pubName\": \"New Moon\",\r\n    \"city\": \"Chicago\",\r\n    \"state\": \"IL\",\r\n    \"country\": \"USA\",\r\n    \"pubInfo\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7115/api/publisher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"publisher"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert New Moon",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"pubId\": \"9934\",\r\n    \"pubName\": \"New Moon\",\r\n    \"city\": \"Chicago\",\r\n    \"state\": \"IL\",\r\n    \"country\": \"USA\",\r\n    \"pubInfo\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7115/api/publisher",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"publisher"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:48:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/publisher/9920",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"publisher",
+								"9920"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/publisher/9934",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"publisher",
+										"9934"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:49:29 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"pubId\": \"9934\",\n    \"pubName\": \"New Moon\",\n    \"city\": \"Chicago\",\n    \"state\": \"IL\",\n    \"country\": \"USA\",\n    \"pubInfo\": null,\n    \"employee\": [],\n    \"titles\": []\n}"
+						},
+						{
+							"name": "Get by Id post delete",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/publisher/9934",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"publisher",
+										"9934"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:50:32 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get by Id post update",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/publisher/9920",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"publisher",
+										"9920"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:52:38 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "133"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"pubId\": \"9920\",\n    \"pubName\": \"New Moon Books Bis\",\n    \"city\": \"Boston\",\n    \"state\": \"MA\",\n    \"country\": \"USA\",\n    \"pubInfo\": null,\n    \"employee\": [],\n    \"titles\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/publisher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"publisher"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/publisher",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"publisher"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:49:45 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"pubId\": \"0736\",\n        \"pubName\": \"New Moon Books\",\n        \"city\": \"Boston\",\n        \"state\": \"MA\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"0877\",\n        \"pubName\": \"Binnet & Hardley\",\n        \"city\": \"Washington\",\n        \"state\": \"DC\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"1389\",\n        \"pubName\": \"Algodata Infosystems\",\n        \"city\": \"Berkeley\",\n        \"state\": \"CA\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"1622\",\n        \"pubName\": \"Five Lakes Publishing\",\n        \"city\": \"Chicago\",\n        \"state\": \"IL\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"1756\",\n        \"pubName\": \"Ramona Publishers\",\n        \"city\": \"Dallas\",\n        \"state\": \"TX\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"9901\",\n        \"pubName\": \"GGG&G\",\n        \"city\": \"M\\u0081nchen\",\n        \"state\": null,\n        \"country\": \"Germany\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"9920\",\n        \"pubName\": \"New Moon Books\",\n        \"city\": \"Boston\",\n        \"state\": \"MA\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"9934\",\n        \"pubName\": \"New Moon\",\n        \"city\": \"Chicago\",\n        \"state\": \"IL\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"9952\",\n        \"pubName\": \"Scootney Books\",\n        \"city\": \"New York\",\n        \"state\": \"NY\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"9967\",\n        \"pubName\": \"New Moon Books\",\n        \"city\": \"Boston\",\n        \"state\": \"MA\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"9975\",\n        \"pubName\": \"New Moon Books\",\n        \"city\": \"Boston\",\n        \"state\": \"MA\",\n        \"country\": \"USA\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    },\n    {\n        \"pubId\": \"9999\",\n        \"pubName\": \"Lucerne Publishing\",\n        \"city\": \"Paris\",\n        \"state\": null,\n        \"country\": \"France\",\n        \"pubInfo\": null,\n        \"employee\": [],\n        \"titles\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/publisher/9934",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"publisher",
+								"9934"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete New Moon",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/publisher/9934",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"publisher",
+										"9934"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:49:59 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"pubId\": \"9934\",\n    \"pubName\": \"New Moon\",\n    \"city\": \"Chicago\",\n    \"state\": \"IL\",\n    \"country\": \"USA\",\n    \"pubInfo\": null,\n    \"employee\": [],\n    \"titles\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"pubId\": \"9920\",\r\n        \"pubName\": \"New Moon Books Bis\",\r\n        \"city\": \"Boston\",\r\n        \"state\": \"MA\",\r\n        \"country\": \"USA\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7115/api/publisher/9920",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"publisher",
+								"9920"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"pubId\": \"9920\",\r\n        \"pubName\": \"New Moon Books Bis\",\r\n        \"city\": \"Boston\",\r\n        \"state\": \"MA\",\r\n        \"country\": \"USA\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7115/api/publisher/9920",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"publisher",
+										"9920"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:52:16 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Store",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"StorId\": \"2530\",\r\n    \"StorName\": \"Harry Potter\", \r\n    \"StorAddress\": \"100 Catamaugus Ave.\",\r\n    \"City\": \"Seattle\",\r\n    \"State\": \"WA\",\r\n    \"Zip\": \"98056\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7115/api/store",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert Harry store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"StorId\": \"2530\",\r\n    \"StorName\": \"Harry Potter\", \r\n    \"StorAddress\": \"100 Catamaugus Ave.\",\r\n    \"City\": \"Seattle\",\r\n    \"State\": \"WA\",\r\n    \"Zip\": \"98056\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7115/api/store",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:42:54 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "get by city and state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/store/city-state?city=seattle&state=wa   ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store",
+								"city-state"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "seattle"
+								},
+								{
+									"key": "state",
+									"value": "wa   "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get stores from Seattle, WA",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/city-state?city=seattle&state=wa   ",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"city-state"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "seattle"
+										},
+										{
+											"key": "state",
+											"value": "wa   "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:43:33 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"storId\": \"2530\",\n        \"storName\": \"Harry Potter\",\n        \"storAddress\": \"100 Catamaugus Ave.\",\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"zip\": \"98056\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"6380\",\n        \"storName\": \"Eric the Read Books\",\n        \"storAddress\": \"788 Catamaugus Ave.\",\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"zip\": \"98056\",\n        \"sales\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/store/6380",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store",
+								"6380"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/2530",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"2530"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:44:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"storId\": \"2530\",\n    \"storName\": \"Harry Potter\",\n    \"storAddress\": \"100 Catamaugus Ave.\",\n    \"city\": \"Seattle\",\n    \"state\": \"WA\",\n    \"zip\": \"98056\",\n    \"sales\": []\n}"
+						},
+						{
+							"name": "get by id post update",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/2530",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"2530"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:45:48 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"storId\": \"2530\",\n    \"storName\": \"Harry Potter the best\",\n    \"storAddress\": \"100 Catamaugus Ave.\",\n    \"city\": \"Seattle\",\n    \"state\": \"WA\",\n    \"zip\": \"98056\",\n    \"sales\": []\n}"
+						},
+						{
+							"name": "get by id post delete",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/2530",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"2530"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:20:04 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "get by id, deleted existing element",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/6380",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"6380"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:25:34 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/store",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:44:21 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"storId\": \"1234\",\n        \"storName\": \"Andorrita\",\n        \"storAddress\": \"Mendoza 145\",\n        \"city\": \"SM Tucumán\",\n        \"state\": \"AR\",\n        \"zip\": \"4000 \",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"2530\",\n        \"storName\": \"Harry Potter\",\n        \"storAddress\": \"100 Catamaugus Ave.\",\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"zip\": \"98056\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"6380\",\n        \"storName\": \"Eric the Read Books\",\n        \"storAddress\": \"788 Catamaugus Ave.\",\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"zip\": \"98056\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"7066\",\n        \"storName\": \"Barnum's\",\n        \"storAddress\": \"567 Pasadena Ave.\",\n        \"city\": \"Tustin\",\n        \"state\": \"CA\",\n        \"zip\": \"92789\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"7067\",\n        \"storName\": \"News & Brews\",\n        \"storAddress\": \"577 First St.\",\n        \"city\": \"Los Gatos\",\n        \"state\": \"CA\",\n        \"zip\": \"96745\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"7131\",\n        \"storName\": \"Doc-U-Mat: Quality Laundry and Books\",\n        \"storAddress\": \"24-A Avogadro Way\",\n        \"city\": \"Remulade\",\n        \"state\": \"WA\",\n        \"zip\": \"98014\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"7896\",\n        \"storName\": \"Fricative Bookshop\",\n        \"storAddress\": \"89 Madison St.\",\n        \"city\": \"Fremont\",\n        \"state\": \"CA\",\n        \"zip\": \"90019\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"8042\",\n        \"storName\": \"Bookbeat\",\n        \"storAddress\": \"679 Carson St.\",\n        \"city\": \"Portland\",\n        \"state\": \"OR\",\n        \"zip\": \"89076\",\n        \"sales\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"StorId\": \"2530\",\r\n    \"StorName\": \"Harry Potter the best\", \r\n    \"StorAddress\": \"100 Catamaugus Ave.\",\r\n    \"City\": \"Seattle\",\r\n    \"State\": \"WA\",\r\n    \"Zip\": \"98056\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7115/api/store/2530",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store",
+								"2530"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Harry",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"StorId\": \"2530\",\r\n    \"StorName\": \"Harry Potter the best\", \r\n    \"StorAddress\": \"100 Catamaugus Ave.\",\r\n    \"City\": \"Seattle\",\r\n    \"State\": \"WA\",\r\n    \"Zip\": \"98056\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7115/api/store/2530",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"2530"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:45:14 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "get by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/store/name/andorrita",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store",
+								"name",
+								"andorrita"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/name/andorrita",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"name",
+										"andorrita"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:46:22 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"storId\": \"1234\",\n        \"storName\": \"Andorrita\",\n        \"storAddress\": \"Mendoza 145\",\n        \"city\": \"SM Tucumán\",\n        \"state\": \"AR\",\n        \"zip\": \"4000 \",\n        \"sales\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get by zip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/store/zip/98056",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store",
+								"zip",
+								"98056"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by zip",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/zip/98056",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"zip",
+										"98056"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 17:46:49 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"storId\": \"2530\",\n        \"storName\": \"Harry Potter the best\",\n        \"storAddress\": \"100 Catamaugus Ave.\",\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"zip\": \"98056\",\n        \"sales\": []\n    },\n    {\n        \"storId\": \"6380\",\n        \"storName\": \"Eric the Read Books\",\n        \"storAddress\": \"788 Catamaugus Ave.\",\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"zip\": \"98056\",\n        \"sales\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7115/api/store/6380",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"api",
+								"store",
+								"6380"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/2530",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"2530"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:19:45 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"storId\": \"2530\",\n    \"storName\": \"Harry Potter the best\",\n    \"storAddress\": \"100 Catamaugus Ave.\",\n    \"city\": \"Seattle\",\n    \"state\": \"WA\",\n    \"zip\": \"98056\",\n    \"sales\": []\n}"
+						},
+						{
+							"name": "delete element with associated elements",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7115/api/store/6380",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7115",
+									"path": [
+										"api",
+										"store",
+										"6380"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jan 2023 18:24:47 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"storId\": \"6380\",\n    \"storName\": \"Eric the Read Books\",\n    \"storAddress\": \"788 Catamaugus Ave.\",\n    \"city\": \"Seattle\",\n    \"state\": \"WA\",\n    \"zip\": \"98056\",\n    \"sales\": []\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

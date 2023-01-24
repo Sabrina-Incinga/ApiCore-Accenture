@@ -52,6 +52,7 @@ namespace WebApiPubs.Controllers
                 return BadRequest();
             }
             context.Entry(publisher).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            context.SaveChanges();
 
             return Ok();
         }
