@@ -27,6 +27,7 @@ namespace WebApiLibros
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DBLibrosContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDbLibros")));
+            services.AddMvc().AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddControllers();
         }
 

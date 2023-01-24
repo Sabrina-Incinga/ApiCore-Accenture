@@ -118,3 +118,6 @@ H:\Sabrina\Accenture\ApiCore\ApiCore-Accenture\Clase1\DemostracionesWebApi\WebAp
 H:\Sabrina\Accenture\ApiCore\ApiCore-Accenture\Clase1\DemostracionesWebApi\WebApiLibros\obj\Debug\netcoreapp3.1\WebApiLibros.dll
 H:\Sabrina\Accenture\ApiCore\ApiCore-Accenture\Clase1\DemostracionesWebApi\WebApiLibros\obj\Debug\netcoreapp3.1\WebApiLibros.pdb
 H:\Sabrina\Accenture\ApiCore\ApiCore-Accenture\Clase1\DemostracionesWebApi\WebApiLibros\obj\Debug\netcoreapp3.1\WebApiLibros.genruntimeconfig.cache
+H:\Sabrina\Accenture\ApiCore\ApiCore-Accenture\Clase1\DemostracionesWebApi\WebApiLibros\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+H:\Sabrina\Accenture\ApiCore\ApiCore-Accenture\Clase1\DemostracionesWebApi\WebApiLibros\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+H:\Sabrina\Accenture\ApiCore\ApiCore-Accenture\Clase1\DemostracionesWebApi\WebApiLibros\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

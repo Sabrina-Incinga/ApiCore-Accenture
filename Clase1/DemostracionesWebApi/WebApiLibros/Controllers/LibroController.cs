@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,13 +22,17 @@ namespace WebApiLibros.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Libro>> Get()
         {
-            return context.Libros.ToList();
+            //return context.Libros.ToList();
+            var resultado = context.Libros.Include(x => x.Autor).ToList();
+
+            return resultado;
         }
 
         [HttpGet("{id}")]
         public ActionResult<Libro> Get(int id)
         {
-            Libro libro = context.Libros.Find(id);
+            //Libro libro = context.Libros.Find(id);
+            Libro libro = context.Libros.Include(x => x.Autor).FirstOrDefault(x => x.Id == id);
             /*if(libro != null)
             {
                 Autor autor = context.Autores.Find(libro.AutorId);
