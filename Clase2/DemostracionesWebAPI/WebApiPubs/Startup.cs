@@ -27,6 +27,7 @@ namespace WebApiPubs
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<pubsContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDBpubs")));
+            services.AddMvc().AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddControllers();
         }
 

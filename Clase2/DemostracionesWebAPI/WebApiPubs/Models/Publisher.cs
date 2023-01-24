@@ -15,7 +15,7 @@ namespace WebApiPubs.Models
             Employee = new HashSet<Employee>();
             Titles = new HashSet<Titles>();
         }
-        [RegularExpression(@"^[9][9][0-9][0-9]?$", ErrorMessage = "PubId debe contener 4 caracteres, comenzando con 99 y los dos últimos caracteres entre 0 y 9 cada uno")]
+        [RegularExpression(@"^1756$|^1622$|^0877$|^0736$|^1389$|^[9][9][0-9][0-9]$", ErrorMessage = "PubId debe contener 4 caracteres, comenzando con 99 y los dos últimos caracteres entre 0 y 9 cada uno")]
         public string PubId { get; set; }
         public string PubName { get; set; }
         public string City { get; set; }
