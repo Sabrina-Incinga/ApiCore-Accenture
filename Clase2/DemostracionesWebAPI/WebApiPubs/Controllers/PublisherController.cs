@@ -25,7 +25,7 @@ namespace WebApiPubs.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Publisher> Get(int id)
+        public ActionResult<Publisher> Get(string id)
         {
             return context.Publishers.Find(id);
         }
@@ -57,7 +57,7 @@ namespace WebApiPubs.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult<Publisher> Delete(int id)
+        public ActionResult<Publisher> Delete(string id)
         {
             var publisher = context.Publishers.Find(id);
             if (publisher == null)
