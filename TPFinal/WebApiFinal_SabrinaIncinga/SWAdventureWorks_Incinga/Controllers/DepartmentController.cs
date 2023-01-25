@@ -49,5 +49,39 @@ namespace SWAdventureWorks_Incinga.Controllers
         {
             return context.Department.Include(x => x.EmployeeDepartmentHistory).FirstOrDefault(x => x.Name == name);
         }
+
+        [HttpPut("{id}")]
+        public ActionResult Update(short id, [FromBody] Department department)
+        {
+            if(department.DepartmentId != id)
+            {
+                return BadRequest();
+            }
+            context.Entry(department).State = EntityState.Modified;
+            context.SaveChanges();
+
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult<Department> Delete(short id)
+        {
+            Department department = Get(id).Value;
+            if (department == null)
+            {
+                return NotFound();
+            }
+            if(department.EmployeeDepartmentHistory.Count > 0)
+            {
+                foreach(var departmentHistory in department.EmployeeDepartmentHistory)
+                {
+                    context.EmployeeDepartmentHistory.Remove(departmentHistory);
+                }
+            }
+            context.Department.Remove(department);
+            context.SaveChanges();
+
+            return department;
+        }
     }
 }
