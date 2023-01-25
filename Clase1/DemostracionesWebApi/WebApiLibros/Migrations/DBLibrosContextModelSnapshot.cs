@@ -33,6 +33,9 @@ namespace WebApiLibros.Migrations
                     b.Property<int?>("Edad")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("FechaDeNacimiento")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("varchar(50)");

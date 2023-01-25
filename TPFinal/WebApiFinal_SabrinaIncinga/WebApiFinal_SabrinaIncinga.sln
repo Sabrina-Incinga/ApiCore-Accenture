@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWProvincias_Incinga", "SWProvincias_Incinga\SWProvincias_Incinga.csproj", "{808C910C-715D-44DF-B5B9-BA3F0EEF320F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWAdventureWorks_Incinga", "SWAdventureWorks_Incinga\SWAdventureWorks_Incinga.csproj", "{988022D0-757F-418D-9041-7723742C4632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{808C910C-715D-44DF-B5B9-BA3F0EEF320F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808C910C-715D-44DF-B5B9-BA3F0EEF320F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808C910C-715D-44DF-B5B9-BA3F0EEF320F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808C910C-715D-44DF-B5B9-BA3F0EEF320F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988022D0-757F-418D-9041-7723742C4632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988022D0-757F-418D-9041-7723742C4632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988022D0-757F-418D-9041-7723742C4632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988022D0-757F-418D-9041-7723742C4632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B09379F5-78C6-4705-A455-06384CCCBB3E}
+	EndGlobalSection
+EndGlobal
